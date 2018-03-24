@@ -57,7 +57,7 @@
     };
     u.addEvt = function(el, name, fn, useCapture){
         if(!u.isElement(el)){
-            console.warn('$api.addEvt Function need el param, el param must be DOM Element');
+            // console.warn('$api.addEvt Function need el param, el param must be DOM Element');
             return;
         }
         useCapture = useCapture || false;
@@ -67,7 +67,7 @@
     };
     u.rmEvt = function(el, name, fn, useCapture){
         if(!u.isElement(el)){
-            console.warn('$api.rmEvt Function need el param, el param must be DOM Element');
+            // console.warn('$api.rmEvt Function need el param, el param must be DOM Element');
             return;
         }
         useCapture = useCapture || false;
@@ -77,7 +77,7 @@
     };
     u.one = function(el, name, fn, useCapture){
         if(!u.isElement(el)){
-            console.warn('$api.one Function need el param, el param must be DOM Element');
+            // console.warn('$api.one Function need el param, el param must be DOM Element');
             return;
         }
         useCapture = useCapture || false;
@@ -116,7 +116,7 @@
     u.first = function(el, selector){
         if(arguments.length === 1){
             if(!u.isElement(el)){
-                console.warn('$api.first Function need el param, el param must be DOM Element');
+                // console.warn('$api.first Function need el param, el param must be DOM Element');
                 return;
             }
             return el.children[0];
@@ -128,7 +128,7 @@
     u.last = function(el, selector){
         if(arguments.length === 1){
             if(!u.isElement(el)){
-                console.warn('$api.last Function need el param, el param must be DOM Element');
+                // console.warn('$api.last Function need el param, el param must be DOM Element');
                 return;
             }
             var children = el.children;
@@ -146,7 +146,7 @@
     };
     u.prev = function(el){
         if(!u.isElement(el)){
-            console.warn('$api.prev Function need el param, el param must be DOM Element');
+            // console.warn('$api.prev Function need el param, el param must be DOM Element');
             return;
         }
         var node = el.previousSibling;
@@ -157,7 +157,7 @@
     };
     u.next = function(el){
         if(!u.isElement(el)){
-            console.warn('$api.next Function need el param, el param must be DOM Element');
+            // console.warn('$api.next Function need el param, el param must be DOM Element');
             return;
         }
         var node = el.nextSibling;
@@ -168,7 +168,7 @@
     };
     u.closest = function(el, selector){
         if(!u.isElement(el)){
-            console.warn('$api.closest Function need el param, el param must be DOM Element');
+            // console.warn('$api.closest Function need el param, el param must be DOM Element');
             return;
         }
         var doms, targetDom;
@@ -213,7 +213,7 @@
 
             return mark;
         }
-        
+
     };
     u.remove = function(el){
         if(el && el.parentNode){
@@ -222,7 +222,7 @@
     };
     u.attr = function(el, name, value){
         if(!u.isElement(el)){
-            console.warn('$api.attr Function need el param, el param must be DOM Element');
+            // console.warn('$api.attr Function need el param, el param must be DOM Element');
             return;
         }
         if(arguments.length == 2){
@@ -234,7 +234,7 @@
     };
     u.removeAttr = function(el, name){
         if(!u.isElement(el)){
-            console.warn('$api.removeAttr Function need el param, el param must be DOM Element');
+            // console.warn('$api.removeAttr Function need el param, el param must be DOM Element');
             return;
         }
         if(arguments.length === 2){
@@ -243,7 +243,7 @@
     };
     u.hasCls = function(el, cls){
         if(!u.isElement(el)){
-            console.warn('$api.hasCls Function need el param, el param must be DOM Element');
+            // console.warn('$api.hasCls Function need el param, el param must be DOM Element');
             return;
         }
         if(el.className.indexOf(cls) > -1){
@@ -254,7 +254,7 @@
     };
     u.addCls = function(el, cls){
         if(!u.isElement(el)){
-            console.warn('$api.addCls Function need el param, el param must be DOM Element');
+            // console.warn('$api.addCls Function need el param, el param must be DOM Element');
             return;
         }
         if('classList' in el){
@@ -268,7 +268,7 @@
     };
     u.removeCls = function(el, cls){
         if(!u.isElement(el)){
-            console.warn('$api.removeCls Function need el param, el param must be DOM Element');
+            // console.warn('$api.removeCls Function need el param, el param must be DOM Element');
             return;
         }
         if('classList' in el){
@@ -282,7 +282,7 @@
     };
     u.toggleCls = function(el, cls){
         if(!u.isElement(el)){
-            console.warn('$api.toggleCls Function need el param, el param must be DOM Element');
+            // console.warn('$api.toggleCls Function need el param, el param must be DOM Element');
             return;
         }
        if('classList' in el){
@@ -298,7 +298,7 @@
     };
     u.val = function(el, val){
         if(!u.isElement(el)){
-            console.warn('$api.val Function need el param, el param must be DOM Element');
+            // console.warn('$api.val Function need el param, el param must be DOM Element');
             return;
         }
         if(arguments.length === 1){
@@ -331,11 +331,11 @@
                     break;
             }
         }
-        
+
     };
     u.prepend = function(el, html){
         if(!u.isElement(el)){
-            console.warn('$api.prepend Function need el param, el param must be DOM Element');
+            // console.warn('$api.prepend Function need el param, el param must be DOM Element');
             return;
         }
         el.insertAdjacentHTML('afterbegin', html);
@@ -343,7 +343,7 @@
     };
     u.append = function(el, html){
         if(!u.isElement(el)){
-            console.warn('$api.append Function need el param, el param must be DOM Element');
+            // console.warn('$api.append Function need el param, el param must be DOM Element');
             return;
         }
         el.insertAdjacentHTML('beforeend', html);
@@ -351,7 +351,7 @@
     };
     u.before = function(el, html){
         if(!u.isElement(el)){
-            console.warn('$api.before Function need el param, el param must be DOM Element');
+            // console.warn('$api.before Function need el param, el param must be DOM Element');
             return;
         }
         el.insertAdjacentHTML('beforebegin', html);
@@ -359,7 +359,7 @@
     };
     u.after = function(el, html){
         if(!u.isElement(el)){
-            console.warn('$api.after Function need el param, el param must be DOM Element');
+            // console.warn('$api.after Function need el param, el param must be DOM Element');
             return;
         }
         el.insertAdjacentHTML('afterend', html);
@@ -367,7 +367,7 @@
     };
     u.html = function(el, html){
         if(!u.isElement(el)){
-            console.warn('$api.html Function need el param, el param must be DOM Element');
+            // console.warn('$api.html Function need el param, el param must be DOM Element');
             return;
         }
         if(arguments.length === 1){
@@ -379,7 +379,7 @@
     };
     u.text = function(el, txt){
         if(!u.isElement(el)){
-            console.warn('$api.text Function need el param, el param must be DOM Element');
+            // console.warn('$api.text Function need el param, el param must be DOM Element');
             return;
         }
         if(arguments.length === 1){
@@ -391,7 +391,7 @@
     };
     u.offset = function(el){
         if(!u.isElement(el)){
-            console.warn('$api.offset Function need el param, el param must be DOM Element');
+            // console.warn('$api.offset Function need el param, el param must be DOM Element');
             return;
         }
         var sl = Math.max(document.documentElement.scrollLeft, document.body.scrollLeft);
@@ -407,7 +407,7 @@
     };
     u.css = function(el, css){
         if(!u.isElement(el)){
-            console.warn('$api.css Function need el param, el param must be DOM Element');
+            // console.warn('$api.css Function need el param, el param must be DOM Element');
             return;
         }
         if(typeof css == 'string' && css.indexOf(':') > 0){
@@ -416,7 +416,7 @@
     };
     u.cssVal = function(el, prop){
         if(!u.isElement(el)){
-            console.warn('$api.cssVal Function need el param, el param must be DOM Element');
+            // console.warn('$api.cssVal Function need el param, el param must be DOM Element');
             return;
         }
         if(arguments.length === 2){
@@ -475,11 +475,11 @@
         }
     };
 
-   
+
     /*by king*/
     u.fixIos7Bar = function(el){
         if(!u.isElement(el)){
-            console.warn('$api.fixIos7Bar Function need el param, el param must be DOM Element');
+            // console.warn('$api.fixIos7Bar Function need el param, el param must be DOM Element');
             return;
         }
         var strDM = api.systemType;
@@ -495,7 +495,7 @@
     };
     u.fixStatusBar = function(el){
         if(!u.isElement(el)){
-            console.warn('$api.fixStatusBar Function need el param, el param must be DOM Element');
+            // console.warn('$api.fixStatusBar Function need el param, el param must be DOM Element');
             return;
         }
         var sysType = api.systemType;
@@ -598,7 +598,7 @@
     };
 
 /*end*/
-    
+
 
     window.$api = u;
 

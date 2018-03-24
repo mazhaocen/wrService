@@ -53,7 +53,7 @@ Object.keys(proxyTable).forEach(function (context) {
           delete proxyRes.headers['set-cookie']
           return
         }
-        console.log(oldCookie)
+        // console.log(oldCookie)
         var oldCookieItems = oldCookie[0].split(';')
         var newCookie = ''
         for(var i=0; i < oldCookieItems.length; ++i){
@@ -94,9 +94,9 @@ var readyPromise = new Promise(resolve => {
   _resolve = resolve
 })
 
-console.log('> Starting dev server...')
+// console.log('> Starting dev server...')
 devMiddleware.waitUntilValid(() => {
-  console.log('> Listening at ' + uri + '\n')
+  // console.log('> Listening at ' + uri + '\n')
   // when env is testing, don't need open it
   if (autoOpenBrowser && process.env.NODE_ENV !== 'testing') {
     opn(uri)
